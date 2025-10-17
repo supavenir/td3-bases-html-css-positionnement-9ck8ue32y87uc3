@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #007acc;
+  --hover-color: #005fa3;
+  --text-color: #333;
+  --bg-light: #f7f9fc;
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: white;
+  color: var(--text-color);
+}
+
+.main-header {
+  background: linear-gradient(to right, #004080, #007acc);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease;
+}
+
+.main-nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-nav .active {
+  border-bottom: 2px solid white;
+}
+
+.about-section,
+.partners-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--bg-light);
+}
+
+.about-section .btn,
+.partners-section .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--hover-color);
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.partner-logos img {
+  max-width: 120px;
+}
+
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.blog-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.blog-posts {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-posts .post {
+  background: #f1f4f8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.post img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.tags .tag {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.3rem 0.7rem;
+  background: #e2e6ec;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags .tag:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.recent-posts p {
+  margin: 0.5rem 0;
+}
